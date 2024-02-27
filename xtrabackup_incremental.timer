@@ -1,0 +1,9 @@
+[Unit]
+Description=Timer for xtrabackup incremental backup
+
+[Timer]
+OnCalendar=Tue..Sun *-*-* 01:00:00
+Persistent=true
+
+[Install]
+WantedBy=timers.target

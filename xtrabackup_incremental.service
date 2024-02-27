@@ -1,0 +1,10 @@
+[Unit]
+Description=Service for xtrabackup incremental backup
+Wants=xtrabackup_full_cleanup.timer
+
+[Service]
+Type=oneshot
+ExecStart=/backup/xtrabackup_scripts/xtrabackup_full_increment_restore.sh incremental
+
+[Install]
+WantedBy=multi-user.target

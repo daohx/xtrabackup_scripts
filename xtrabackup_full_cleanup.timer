@@ -1,0 +1,9 @@
+[Unit]
+Description=Timer for xtrabackup full backup and cleanup
+
+[Timer]
+OnCalendar=Mon *-*-* 01:00:00
+Persistent=true
+
+[Install]
+WantedBy=timers.target
