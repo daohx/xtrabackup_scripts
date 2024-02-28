@@ -33,7 +33,7 @@ sudo systemctl enable --now xtrabackup_full_cleanup.timer
 sudo systemctl enable --now xtrabackup_incremental.timer
 ```
 
-One short scripts
+## One short scripts
 ```
 # Step 1: Clone the repository
 git clone https://github.com/daohx/xtrabackup_scripts.git /backup/xtrabackup_scripts/
