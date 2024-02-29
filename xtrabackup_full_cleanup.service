@@ -6,10 +6,10 @@ Wants=xtrabackup_incremental.timer
 Type=oneshot
 
 # Full backup
-ExecStart=/etc/systemd/system/xtrabackup_full_increment_restore.sh full
+ExecStart=/backup/xtrabackup_scripts/xtrabackup_full_incremental_restore_cleanup.sh full
 
 # Cleanup
-ExecStart=/etc/systemd/system/xtrabackup_full_increment_restore.sh cleanup
+ExecStart=/backup/xtrabackup_scripts/xtrabackup_full_incremental_restore_cleanup.sh cleanup
 
 [Install]
 WantedBy=multi-user.target
